@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-class FunctionWithDefaultArguments {
+class FunctionWithDefaultArguments
+{
 public:
     void lineChar(char ch = '#', int l = 40);
 
@@ -10,14 +11,17 @@ private:
 };
 
 // Definition of the lineChar function
-void FunctionWithDefaultArguments::lineChar(char ch, int l) {
-    for(int i = 0; i < l; i++) {
+void FunctionWithDefaultArguments::lineChar(char ch, int l)
+{
+    for (int i = 0; i < l; i++)
+    {
         cout << ch << " ";
     }
     cout << endl;
 }
 
-int main() {
+int main()
+{
     FunctionWithDefaultArguments obj;
 
     // Calling lineChar() with default arguments
