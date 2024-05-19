@@ -4,10 +4,7 @@ using namespace std;
 class FunctionWithDefaultArguments
 {
 public:
-    void lineChar(char ch = '#', int l = 40);
-
-private:
-    // No private members in this example
+    void lineChar(char ch='8', int l );
 };
 
 // Definition of the lineChar function
@@ -25,7 +22,7 @@ int main()
     FunctionWithDefaultArguments obj;
 
     // Calling lineChar() with default arguments
-    obj.lineChar();
+    // obj.lineChar();
 
     // Calling lineChar() with one argument
     obj.lineChar('t');
